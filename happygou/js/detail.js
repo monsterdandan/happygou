@@ -1,4 +1,3 @@
-window.onload=function(){
 	var showImgs=$(".show_img")[0].children;
 
 	var smallImgs=$(".listimg")[0].getElementsByTagName("img");
@@ -14,4 +13,3 @@ window.onload=function(){
 			smallImgs[i].className="";
 		}
 	}
-}

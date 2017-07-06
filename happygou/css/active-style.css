@@ -21,7 +21,7 @@ body{
 	background-color:#fff;
 }
 .w{
-	width:1190px;
+	width:1090px;
 }
 /*=============header=============*/
 header{
@@ -426,24 +426,289 @@ header .w .r .serve_box a:hover{
 #nav .w>ul>li a:hover{
 	color:#94193f;
 }
-
+/*=============shopbg=============*/
 #shopbg{
 	height:150px;
 	background:url(../images/active/header.jpg) no-repeat center;
 }
-
-#active_ban{
-	height:600px;
-	position:relative;
+/*=============active导航=============*/
+#active_nav{
+	height:31px;
+	background-color:#bbd886;
+	line-height:31px;
 }
-#active_ban img{
-	height:550px;
+#active_nav ul.l li{
+	padding:0px 21px;
+}
+#active_nav ul.l a{
+	font-weight:bold;
+	font-size:14px;
+	color:#333;
+}
+#active_nav ul.l li:hover{
+	background-color:#cfe3aa;
+}
+#active_nav ul.r li:hover:first-child{
+	background-color:#cfe3aa;
+}
+#active_nav ul.r li:first-child{
+	padding:0 43px;
+}
+#active_nav ul.r a{
+	font-size:14px;
+	color:#333;
+}
+#active_nav ul.r li:last-child:before{
+	content:"";
+	display:inline-block;
+	width:12px;
+	height:12px;
+	background-image:url(../images/active/hert.png);
+}
+
+/*=============active轮播图=============*/
+#imgbox{
 	width:100%;
+	height:550px;
+	position:relative;
+	overflow:hidden;
+}
+#imgbox img{
+	width:auto;
+	height:550px;
 	position:absolute;
 	top:0;
+	left:-300px;
+	transition:opacity 1s;
+}
+#changeimg{
+	position:absolute;
+	left:45%;
+	bottom:10px;
+	list-style:none;
+	z-index:5;
+	height:20px;
+	background-color:rgba(0,0,0,0.5);
+	border-radius:15px;
+	padding:10px 10px 0px 10px ;
+}
+#changeimg li{
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	margin:0 5px;
+	float:left;
+	background-color:#333;
+	cursor:pointer;
+}
+#changeimg li:first-child{
+	background-color:#fff;
+}
+#prev,#next{
+	position:absolute;
+	width:30px;
+	height:40px;
+	font-size:30px;
+	background:#000;
+	color:#fff;
+	line-height:40px;
+	z-index:5;
+	text-align:center;
+	cursor:pointer;
+}
+#prev{
 	left:0;
+	top:45%;
+}
+#next{
+	right:0;
+	top:45%;
+}
+
+/*=============active提示栏=============*/
+#active_ts{
+	height:150px;
+	background:url(../images/active/ts.jpg) no-repeat center;
+	position:relative;
+}
+#active_ts #djck{
+	position:absolute;
+	width:146px;
+	height:38px;
+	cursor:pointer;
+	left:151px;
+	top:84px;
+	border-radius:19px;
+}
+#new_window{
+	width:600px;
+	height:412px;
+	background:url(../images/active/tsck.jpg) no-repeat;
+	position:fixed;
+	left:25%;
+	top:15%;
+	z-index:10;
+}
+#new_window span{
+	position:absolute;
+	width:23px;
+	height:23px;
+	right:-10px;
+	top:-10px;
+	background:url(../images/active/pop_close.png) no-repeat;
+}
+/*================一楼活动==========*/
+#first_active{
+	overflow:hidden;
+}
+#first_active .first_title{
+	height:188px;
+	background:url(../images/active/h1.jpg) no-repeat center;
+	position:relative;
+}
+#first_active .one_floor{
+	height:630px;
+	background:url(../images/active/bg1.jpg) no-repeat center;
+	position:relative;
+}
+#first_active .two_floor{
+	height:630px;
+	background:url(../images/active/bg2.jpg) no-repeat center;
+	position:relative;
+}
+#first_active .three_floor{
+	height:642px;
+	background:url(../images/active/bg3.jpg) no-repeat center;
+	position:relative;
+}
+#first_active .four_floor{
+	height:743px;
+	background:url(../images/active/bg4.jpg) no-repeat center;
+	position:relative;
+}
+#first_active .gosee{
+	position:absolute;
+	width:86px;
+	height:86px;
+	background-image:url(../images/active/icon_buy.png);
+	display:none;
+}
+#first_active .one_floor .gosee{
+	top:48%;
+	left:46%;
+}
+#first_active .two_floor .gosee{
+	top:44%;
+	left:46%;
+}
+#first_active .three_floor .gosee{
+	top:42%;
+	left:46%;
+}
+#first_active .gosee li{
+	height:43px;
+	line-height:50px;
+	text-align:center;
+	color:#fff;
+}
+#first_active .gosee li a{
+	color:#fff;
+	display:block;
+	width:100%;
+	height:43px;
+}
+#first_active .gosee li:first-child a:hover{
+	color:#ed145b;
+}
+#first_active .gosee li:last-child{
+	background:url(../images/active/cart.png) no-repeat center;
+}
+#first_active .right_floor,#first_active .left_floor{
+	width:50%;
+	height:100%;
+}
+#first_active .right_floor .gosee{
+	left:66%;
+	top:40%;
+}
+#first_active .left_floor .gosee{
+	left:27%;
+	top:40%;
+}
+#first_active .one_floor .w,#first_active .two_floor .w,#first_active .three_floor .w,#first_active .four_floor .w{
+	cursor:pointer;
+	height:100%;
 }
 /*=============footer_icon=============*/
+#second_active{
+	overflow:hidden;
+	margin-top:35px;
+}
+#second_active .one_floor{
+	height:863px;
+	background:url(../images/active/bg5.jpg) no-repeat center;
+	position:relative;
+}
+#second_active .two_floor{
+	height:596px;
+	background:url(../images/active/bg6.jpg) no-repeat center;
+	position:relative;
+}
+#second_active .three_floor{
+	height:668px;
+	background:url(../images/active/bg7.jpg) no-repeat center;
+	position:relative;
+}
+#second_active .four_floor{
+	height:559px;
+	background:url(../images/active/bg8.jpg) no-repeat center;
+	position:relative;
+}
+#second_active .gosee{
+	position:absolute;
+	width:86px;
+	height:86px;
+	background-image:url(../images/active/icon_buy.png);
+	display:none;
+}
+#second_active .one_floor .gosee{
+	top:48%;
+	left:46%;
+}
+#second_active .two_floor .gosee{
+	top:44%;
+	left:46%;
+}
+#second_active .three_floor .gosee{
+	top:42%;
+	left:46%;
+}
+#second_active .four_floor .gosee{
+	top:42%;
+	left:46%;
+}
+#second_active .gosee li{
+	height:43px;
+	line-height:50px;
+	text-align:center;
+	color:#fff;
+}
+#second_active .gosee li a{
+	color:#fff;
+	display:block;
+	width:100%;
+	height:43px;
+}
+#second_active .gosee li:first-child a:hover{
+	color:#ed145b;
+}
+#second_active .gosee li:last-child{
+	background:url(../images/active/cart.png) no-repeat center;
+}
+#second_active .one_floor .w,#second_active .two_floor .w,#second_active .three_floor .w,#second_active .four_floor .w{
+	cursor:pointer;
+	height:100%;
+}/*=============footer_icon=============*/
 #footer_icon{
 	height:139px;
 	margin-top:25px;
@@ -524,11 +789,12 @@ footer{
 	height:173px;
 	padding-top:9px;
 	text-align:center;
-	background:#fbfbfb;
+	background-image:url(../images/active/newindex_footer_bg.png);
 }
 footer p{
 	height:25px;
 	line-height:25px;
+	color:#ccc;
 }
 footer a{
 	display:inline-block;

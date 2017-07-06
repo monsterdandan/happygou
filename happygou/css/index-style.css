@@ -1398,10 +1398,12 @@ footer{
 	height:173px;
 	padding-top:9px;
 	text-align:center;
+	background-image:url(../images/active/newindex_footer_bg.png);
 }
 footer p{
 	height:25px;
 	line-height:25px;
+	color:#ccc;
 }
 footer a{
 	display:inline-block;
