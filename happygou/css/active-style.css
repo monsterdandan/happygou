@@ -620,8 +620,20 @@ header .w .r .serve_box a:hover{
 #first_active .gosee li:first-child a:hover{
 	color:#ed145b;
 }
-#first_active .gosee li:last-child{
+#first_active .gosee .act_has{
 	background:url(../images/active/cart.png) no-repeat center;
+}
+#first_active .gosee .act_has:hover{
+	background:url(../images/active/cart-8.png) no-repeat center;
+}
+#first_active .gosee .act_over a:hover{
+	background:url(../images/active/collect_ico.png) no-repeat 0 0;
+}
+#first_active .gosee .act_over a{
+	background:url(../images/active/collect_ico.png) no-repeat -19px 0;
+	width:19px;
+	height:18px;
+	display:inline-block;
 }
 #first_active .right_floor,#first_active .left_floor{
 	width:50%;
@@ -639,7 +651,7 @@ header .w .r .serve_box a:hover{
 	cursor:pointer;
 	height:100%;
 }
-/*=============footer_icon=============*/
+/*=============二楼活动=============*/
 #second_active{
 	overflow:hidden;
 	margin-top:35px;
@@ -698,17 +710,134 @@ header .w .r .serve_box a:hover{
 	display:block;
 	width:100%;
 	height:43px;
+	line-height:43px;
 }
 #second_active .gosee li:first-child a:hover{
 	color:#ed145b;
 }
-#second_active .gosee li:last-child{
+#second_active .gosee .act_has{
 	background:url(../images/active/cart.png) no-repeat center;
+}
+#second_active .gosee .act_has:hover{
+	background:url(../images/active/cart-8.png) no-repeat center;
+}
+#second_active .gosee .act_over a:hover{
+	background:url(../images/active/collect_ico.png) no-repeat 0 0;
+}
+#second_active .gosee .act_over a{
+	background:url(../images/active/collect_ico.png) no-repeat -19px 0;
+	width:19px;
+	height:18px;
+	display:inline-block;
 }
 #second_active .one_floor .w,#second_active .two_floor .w,#second_active .three_floor .w,#second_active .four_floor .w{
 	cursor:pointer;
 	height:100%;
-}/*=============footer_icon=============*/
+}
+/*=============active广告=============*/
+#active_adv{
+	overflow:hidden;
+}
+#active_adv .one_adv{
+	height:862px;
+	background:url(../images/active/bg9.jpg) no-repeat center;
+}
+#active_adv .two_adv{
+	height:90px;
+	background:url(../images/active/bg10.jpg) no-repeat center;
+}
+/*=============active_list=============*/
+#act_list{
+	overflow:hidden;
+	margin-top:10px;
+}
+#act_list .act_left{
+	width:190px;
+	overflow:hidden;
+}
+#act_list .shop_search{
+	height:123px;
+	border:1px solid #e0dacc;
+}
+#act_list h3{
+	height:29px;
+	border-bottom:1px solid #e0dacc;
+	color:#89651e;
+	line-height:29px;
+	padding:0 9px;
+}
+#act_list .act_text{
+	width:96px;
+	height:16px;
+	padding:5px;
+	border:1px solid #e0dacc;
+	border-radius:3px;
+	margin-left:6px;
+	margin-top:13px;
+	line-height:28px;
+	vertical-align:middle;
+}
+#act_list .act_btn{
+	width:58px;
+	height:28px;
+	border:1px solid #cbcbcb;
+	border-radius:3px;
+	margin-left:6px;
+	margin-top:13px;
+	line-height:28px;
+	vertical-align:middle;
+}
+#act_list .search_box a{
+	margin-left:6px;
+	line-height:50px;
+}
+#act_list a:hover{
+	color:#f11e63;
+	text-decoration:underline;
+}
+#act_list .hot_buy{
+	height:668px;
+	border:1px solid #cbcbcb;
+	margin-top:10px;
+}
+#act_list .hot_buy ul{
+	padding:0 9px;
+}
+#act_list .hot_buy ul li{
+	height:60px;
+	border-bottom:1px dashed #cbcbcb;
+	padding-top:10px;
+	position:relative;
+}
+#act_list .hot_buy .img_a{
+	display:block;
+	width:43px;
+	height:43px;
+}
+#act_list .img_a img{
+	width:43px;
+	height:43px;
+}
+#act_list .act_l_goods{
+	width:88px;
+	padding:0 10px;
+}
+#act_list .act_l_goods a{
+	width:98px;
+	height:28px;
+	line-height:14px;
+	overflow:hidden;
+	word-break:break-all;
+	display:block;
+}
+#act_list .act_l_goods p{
+	height:20px;
+	line-height:30px;
+	color:#f11e63;
+}
+
+/*=============footer_icon=============*/
+/*=============footer_icon=============*/
 #footer_icon{
 	height:139px;
 	margin-top:25px;
